@@ -37,12 +37,29 @@ const collectEmployees = function() {
 
     // Returns an array of objects containing employee information.
     return employeeInput;
-
 }
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  // Create sum variable.
+  let sum = 0;
+  // Loop through objects in array.
+  for (people of employeesArray) {
+    // Each loop adds each of the employees listed salary to the sum variable.
+    sum += people.salary;
+  }
+  // Average variable is the sum divided by number of inputs.
+  let average = sum / employeesArray.length;
+
+  // Formats average variable as a currency.
+  average = average.toLocaleString( 'en-US' ,{
+    style: 'currency',
+    currency: 'USD'
+  }
+);
+
+// Simple message looped to the console. Utelizes length method of the array to get the number of employees.
+console.log(`The average salary between our ${employeesArray.length} employee(s) is ${average}`);
 }
 
 // Select a random employee
