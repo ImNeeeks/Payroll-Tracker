@@ -64,11 +64,15 @@ console.log(`The average salary between our ${employeesArray.length} employee(s)
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+  // Random number created using the Math.random method. Use length method with Math.floor to ensure random number is in correct range.
+  const randomNumber = Math.floor(Math.random() * employeesArray.length);
+  // Console log simple message using the random number as the array index to select a random winner.
+  console.log(`Winner of the monthly $100 Amazon Gift Card is...
+   ${employeesArray[randomNumber].firstName} ${employeesArray[randomNumber].lastName}! Congratulations!`);
 }
 
 /*
-  ====================
+  ====================a
   STARTER CODE
   Do not modify any of the code below this line:
 */
