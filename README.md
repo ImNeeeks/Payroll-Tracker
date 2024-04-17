@@ -1,32 +1,19 @@
 # Payroll-Tracker
 
+[Deployed Link](https://imneeeks.github.io/Payroll-Tracker/)
 
+## Description
 
-## User Story
-AS A payroll manager
+This application creates a list of employees and their salaries.
 
-I WANT AN employee payroll tracker
+## Additional Features
 
-SO THAT I can see my employees' payroll data and properly budget for the company
+The console displays two additional functions: employee average salary and random winner of monthly giveaway.
 
-## Acceptance Criteria
-GIVEN an employee payroll tracker
+## Usage
 
-WHEN I click the "Add employee" button
+Follow prompts to add first name, last name, and salary of employee.
 
-THEN I am presented with a series of prompts asking for first name, last name, and salary
+Please use numbers only on salary prompt. Using any special characters will cause number to default to "0" .
 
-WHEN I finish adding an employee
-
-THEN I am prompted to continue or cancel
-
-WHEN I choose to continue
-
-THEN I am prompted to add a new employee
-
-WHEN I choose to cancel
-
-THEN my employee data is displayed on the page sorted alphabetically by last name, 
-
-and the console shows computed and aggregated data
-
+![screeenshot](./assets/images/employeepayrolltracker.jpeg)
